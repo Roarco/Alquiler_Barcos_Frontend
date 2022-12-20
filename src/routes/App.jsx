@@ -5,7 +5,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import AppContext from '../context/AppContext';
 import Layout from '../layout/layout';
-//import Home from '../pages/Home';
+import Home from '../pages/Home';
 import Login from '../pages/Login';
 
 
@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Layout>
           <Switch>
-            {/* <Route exact path='/' component={Home} /> */}
+            <Route exact path='/' component={Home} />
             <Route exact path='/login' component={Login} />
             {/*<Route exact path='/password-recovery' component={PasswordRecovery} />
             <Route exact path='/send-email' component={SendEmail} />
