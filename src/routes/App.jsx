@@ -7,6 +7,7 @@ import AppContext from '../context/AppContext';
 import Layout from '../layout/layout';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
+import Boats from '../pages/Boats';
 
 
 
@@ -16,8 +17,9 @@ function App() {
       <BrowserRouter>
         <Layout>
           <Switch>
-            <Route exact path='/' component={Home} />
+            {/* <Route exact path='/' component={Home} /> */}
             <Route exact path='/login' component={Login} />
+            <Route exact path='/boats' component={Boats} />
             {/*<Route exact path='/password-recovery' component={PasswordRecovery} />
             <Route exact path='/send-email' component={SendEmail} />
             <Route exact path='/new-password' component={NewPassword} />
